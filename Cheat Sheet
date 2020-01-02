@@ -1,0 +1,61 @@
+Git Commands
+1.git init 
+2.git status 
+3.git add fileName
+4.git add .     //Git add everything in that folder
+5.git rm fileName  // to remove from area
+6.git rm -f fileName  // to remove forcefully from staging area and actual file
+7.git rm --cached fileName //to remove from staging area only
+/* Need to the following before git commit 
+8.git config --global user.email "utsav1999@gmail.com"
+9.git config --global user.name "Utsav"
+*/
+10.git commit --help
+11.git commit -m "Initial Commit"  //Will take all files tracked or untracked
+12.git commit -a -m "Message" //Will only commit tracked file
+13.git log //to show all commit history
+
+
+//HEAD is a pointer to current point of time
+
+14.git checkout #commit_id  //will start a new branch and point your head to it
+15.git checkout master //will take you back to master branch
+
+
+// Revert and Reset
+
+16.git revert #commit_id //will change head->master current to new commit_id
+
+17. git reset --hard #commit_id // will permanently move the head pointer to the commit id.
+18. git reset --soft #commit_id // used for spelling error, skipping back one , but have all staged  and ready to commit , wont delete any file in working directory
+19. git reset --mixed #commit_id //used for going back by one and removing any accidental commit , wont delete any file in working directory
+
+20 .gitignore  //used to ignore untracked file
+
+// Branching 
+21. always create a git init first commit before starting to branch .
+22. git checkout -b nameOfBranch  // create new brach and switches to it.
+23. git branch branchName // will crate new branch 
+24. git branch -a  // will show all the branch available
+25.	git checkout nameOfBranch //will switch to that branch 
+26. git checkout master // will switch back to master branch 
+27. git branch -d nameOfBranch  // to delete branch 
+
+// Merge Branching
+28. git merge nameOfBranch // will merge branch you are currently on with branch specified.
+
+
+// GITHUB
+29.Download zip : will create a local repository , but wont have git init in it , so use clone to use with git hub
+
+//Remote repository 
+30. git remote add origin https-git-link //will connect our local repo to remote repo
+31. git remote -v  //to check remote connection
+32. fetch = pull 
+33. git pull //will pull all the branch if they are tracked
+34. git pull origin name-of-the-branch //will pull specific branch
+35. git pull origin master //will pull from main branch
+36. git push -u origin master // will push the new update to github repo , -u will remember the remote origin
+37. 
+
+
