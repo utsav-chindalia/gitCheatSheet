@@ -56,6 +56,7 @@ Git Commands
 34. git pull origin name-of-the-branch //will pull specific branch
 35. git pull origin master //will pull from main branch
 36. git push -u origin master // will push the new update to github repo , -u will remember the remote origin
-37. 
+37. Each branch is separate , we need to push each branch.
+38. git push origin --delete name-of-the-branch //Delete name of the branch using push protocol
 
 
